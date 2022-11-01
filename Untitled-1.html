@@ -11,7 +11,55 @@
 
 <div class="container-fluid p-5 bg-primary text-white text-center">
   <h1>Hello Bootcoding</h1>
+  
 </div>
+<script>
+//Add Example
+var c = add(10,20);
+console.log(c);
+function add(a,b)
+{
+    return a+b;
+}
+
+//Assignment 1
+// var Student = GetSquareofPercentage(60);
+// console.log(Student);
+// function GetSquareofPercentage(percentagesquare)
+// {
+//     return percentagesquare*percentagesquare;
+// }
+
+// Assignment 2
+const cities = ["Kolkata" , "Delhi" , "Nagpur"];
+var studentCity =  getStudentCity("Nagpur", cities);
+//console.log(StudentCity);
+ function getStudentCity(city, cities)
+ {
+    console.log("Length = " + cities.length);
+    let i = 0;
+       for(; i < cities.length; i++)
+   {
+    console.log(cities[0])
+    if(city == cities[i] ){
+     console.log("City Present " + city);
+     return city;
+    }
+   }
+   return city;
+   
+}
+
+
+function printPattern1(n){
+
+    for(let i = 0; i < n; i++){
+        console.log("*");
+    }
+
+}
+
+</script>
 
 </body>
 </html>
