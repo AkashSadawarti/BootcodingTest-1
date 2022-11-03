@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            var num = [15,18,25,35,15,14,51,97,67]
+            getsecondlargestnum(num);
+            function getsecondlargestnum(num)
+            {
+                num = num.sort();
+            console.log(num);
+            var length = num.length;
+            
+            console.log(num[length-2] + " is the Second Largest Number");
+        
+            }
+              getDuplicatenum(num);
+            function getDuplicatenum(num)
+            {
+                    for(i=0; i < num.length ; i++)
+                    {
+                        for(j= i+1 ; j< num.length; j++)
+                        {
+                          if(num[i] == num[j] )
+                        {
+                           console.log(num[i] + " and " + num[j] + " are Duplicate" );
+                        }
+                    }
+                    }
+               }            
+        </script>
+    </body>
+</html>
