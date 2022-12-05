@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wins Draws and Losses</title>
+</head>
+<body>
+    <!-- Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+
+- wins get 3 points
+- draws get 1 point
+- losses get 0 points
+For Ex: footballPoints(3, 4, 2) ➞ 13 -->
+<script>
+    function getCalculatedpoints(wins, draws, losses){
+       let w = 3;
+       let d = 1;
+       let l = 0;
+       let TotalPoints = wins * w + draws * d + losses * l ;
+       console.log(`Total Points are ${TotalPoints}`)
+    }
+    getCalculatedpoints(10,2,0)
+</script>
+</body>
+</html>
