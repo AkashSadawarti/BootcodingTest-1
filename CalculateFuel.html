@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Calculation</title>
+</head>
+<body>
+    <script>
+// A vehicle needs 10 times the amount of fuel than the distance it travels.
+// However, it must always carry a minimum of 100 fuel.
+// Create a function which calculates the amount of fuel it needs, given the distance.
+// Notes Distance will be a number greater than zero. Return 100 if the calculated fuel turns out to be less than 100.
+// For Ex: calculateFuel(3) ➞ 100
+// For Ex: calculateFuel(30) ➞ 300
+  let initailFuel = 100
+        let distance = prompt('Enter the Distance');
+        function getCalculatedFuel(){
+            if(distance != 0){
+
+                if(distance <= 10)
+                {
+                    console.log(`Fuel Capacity is ${initailFuel}  lit`)
+                }
+                else if(distance > 10){
+                    console.log(`Fuel Capacity is ${distance  * 10}`)
+                }
+            }
+            else {
+                console.log('Distance should be more than 0')
+            }
+            }
+        getCalculatedFuel(5);
+    </script>
+</body>
+</html>
