@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate min into seconds</title>
+</head>
+<body>
+    <script>
+        //Conversion of min to seconds
+        function getConvertedTime(min){
+            if(min > 0){
+                let sec = 0;
+                sec = min * 60
+                console.log(`The conversion of ${min} minutes is ${sec} seconds`);
+            }
+        }
+        getConvertedTime(5)
+    </script>
+</body>
+</html>
