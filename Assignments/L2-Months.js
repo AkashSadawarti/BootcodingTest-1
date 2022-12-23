@@ -1,0 +1,72 @@
+// 9) WAP that reads an integer between 1 and 12 and print the month of the
+// year in English.
+// Test Data :
+// Input a number between 1 to 12 to get the month name: 8
+// Expected Output:
+// August
+ //**Solution 1 */
+// function Month(num){
+    
+//     switch (num) {
+//         case 1:
+//             console.log('January')
+//             break;
+    
+//         case 2:
+//             console.log('February')
+//             break;
+    
+//         case 3:
+//             console.log('March')
+//             break;
+    
+//         case 4:
+//             console.log('April')
+//             break;
+    
+//         case 5:
+//             console.log('May')
+//             break;
+    
+//         case 6:
+//             console.log('June')
+//             break;
+    
+//         case 7:
+//             console.log('July')
+//             break;
+    
+//         case 8:
+//             console.log('August')
+//             break;
+    
+//         case 9:
+//             console.log('September')
+//             break;
+    
+//         case 10:
+//             console.log('October')
+//             break;
+    
+//         case 11:
+//             console.log('November')
+//             break;
+    
+//         case 12:
+//             console.log('December')
+//             break;
+    
+//         default:
+//             console.log('Month number is not valid')
+//             break;
+//     }
+// }
+// Month(8)
+
+/*Solution 2 by array */
+
+let Month = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+let getMonth = (num) =>{
+    console.log(Month[num-1])
+}
+getMonth(5)
