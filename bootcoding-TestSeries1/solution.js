@@ -6,3 +6,18 @@ for(let i = 0 ; i<=arr.length;i++){
     }
 }
 
+//2) recurrsion
+
+function getSumofDigits(n){
+    if(n == 0){
+        return 0 ;
+    }
+    if(n == 1){
+        return 1 ;
+    }
+    return n%10 + getSumofDigits(n/10);
+}
+
+console.log(Math.floor( getSumofDigits(11)))
+
+//7
