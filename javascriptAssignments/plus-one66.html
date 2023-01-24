@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+
+// Increment the large integer by one and return the resulting array of digits
+let Arr = [1,2,9]
+
+function getIncrement(Arr){
+ for(let i=Arr.length-1;i>=0;i--){
+    Arr[i]++;
+    if(Arr[i]>9){
+        Arr[i] = 0;
+    }else{
+        return Arr;
+    }
+ }
+ Arr.unshift(1);
+ return Arr
+}
+
+let res = getIncrement(Arr);
+console.log(res);
+    </script>
+</body>
+</html>
