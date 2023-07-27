@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <script src="./dark-light-theme.js" defer></script>
+    <title>Dark and light theme</title>
+    <style>
+        body{
+            text-align : center
+        }
+        select{
+            margin-block: 20px;
+            padding: 5px 20px;
+            border:4px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Set Theme Color</h1>
+    <div>
+        <label for="theme"><strong>Select Theme : </strong></label><br>
+        <select  id="theme" onchange="switchTheme()">
+            <option selected><strong>Select theme</strong></option>
+            <option value="light" ><strong>light</strong></option>
+            <option value="dark"><strong>dark</strong></option>
+        </select>
+    </div>
+</body>
+
+</html>
